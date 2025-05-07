@@ -1,0 +1,14 @@
+.Vue-Toastification {
+	&__toast {
+		align-items: center !important;
+
+		&--error {
+			background-color: #fa0303 !important;
+		}
+	}
+	&__progress {
+		&-bar {
+			background-color: #fff !important;
+		}
+	}
+}

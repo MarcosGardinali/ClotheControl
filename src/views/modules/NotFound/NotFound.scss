@@ -1,0 +1,17 @@
+.not-found {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.875rem;
+	height: 100%;
+
+	&__text {
+		color: #48688b;
+		text-align: center;
+		font-size: 1.25rem;
+		font-weight: 400;
+		line-height: normal;
+		max-width: 20rem;
+	}
+}

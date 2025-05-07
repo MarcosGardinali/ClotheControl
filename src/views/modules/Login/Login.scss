@@ -1,0 +1,63 @@
+.login {
+	background: linear-gradient(-45deg, #2C3E50, #27AE60, #2C3E50, #27AE60);
+	background-size: 400% 400%;
+	animation: gradientShift 10s ease infinite;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+
+	&-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 100%;
+
+		&__form {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #2C3E50;
+			border-top-right-radius: 1rem;
+			border-bottom-right-radius: 1rem;
+		}
+		&__banner{
+			height: 100%;
+			width: 100%;
+			background-image: url('/src/assets/images/loginImage.png');
+			background-repeat: no-repeat;
+			background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+			background-position: center center; /* Centraliza a imagem */
+		}
+	}
+
+	@keyframes gradientShift {
+		0% {
+		  background-position: 10% 50%;
+		}
+		50% {
+		  background-position: 100% 50%;
+		}
+		100% {
+		  background-position: 10% 50%;
+		}
+	  }
+}
+
+@media (min-width: 992px) {
+	.login {
+		&-container {
+			background: linear-gradient(135deg, rgba(39, 174, 96, 0.9), rgba(228, 231, 235, 0.9));
+			width: 65%;
+			height: 80%;
+			border-radius: 1rem;
+			box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15),
+              0 6px 8px rgba(0, 0, 0, 0.1);
+		}
+	}
+} 
+

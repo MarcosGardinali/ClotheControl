@@ -1,0 +1,138 @@
+// Font faces
+@font-face {
+	font-family: 'Open-Sans';
+	src: url('../assets/theme/fonts/OpenSans.ttf');
+}
+
+button {
+	border-radius: 5px;
+	cursor: pointer;
+
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: 'Open-Sans';
+
+	transition: all 0.4s ease;
+	user-select: none;
+
+	height: 2.25rem;
+
+	&:hover {
+		opacity: 0.8;
+	}
+	&.disabled {
+		pointer-events: none;
+		opacity: 0.8;
+	}
+}
+
+input,
+select,
+textarea {
+	border: 2px solid #e5e5e5;
+	border-radius: 5px;
+
+	background: #fff;
+	font-size: 0.875rem;
+	font-weight: 400;
+	transition: all 0.4s ease;
+
+	outline: none;
+	padding: 0px 0.5rem;
+
+	display: block;
+	min-height: 2.25rem;
+
+	&::placeholder {
+		/* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: #cdcdcd;
+	}
+
+	&:-ms-input-placeholder {
+		/* Internet Explorer 10-11 */
+		color: #cdcdcd;
+	}
+
+	&::-ms-input-placeholder {
+		/* Microsoft Edge */
+		color: #cdcdcd;
+	}
+}
+
+input:-webkit-autofill {
+	background-color: transparent !important;
+	box-shadow: 0 0 0 50px white inset !important;
+	-webkit-box-shadow: 0 0 0 50px white inset !important;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 4px;
+	height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #90abc9;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #a5bad1;
+}
+
+/* Buttons */
+.btn-primary {
+	background: var(--structurePrimaryButton);
+	color: #fff;
+
+	&:disabled {
+		opacity: 0.7;
+		cursor: not-allowed;
+	}
+}
+
+.btn-secondary {
+	background: #fff;
+	border: 1px solid var(--structureSecondaryButton);
+	color: var(--structureSecondaryButton);
+
+	&:hover {
+		background: var(--structureSecondaryButton);
+		color: #fff;
+	}
+}
+
+.btn-cancel {
+	background: #fff;
+	border: 1px solid var(--structurePrimaryButton);
+	color: var(--structurePrimaryButton);
+
+	&:hover {
+		border: 1px solid #fa0303;
+		background: #fa0303;
+		color: #fff;
+	}
+}
+
+.btn-danger {
+	background: #fff;
+	border: 1px solid #fa0303;
+	color: #fa0303;
+
+	&:hover {
+		background: #fa0303;
+		color: #fff;
+	}
+}
