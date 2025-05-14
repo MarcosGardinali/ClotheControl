@@ -1,5 +1,5 @@
 .login {
-	background: linear-gradient(-45deg, #2C3E50, #27AE60, #2C3E50, #27AE60);
+	background: linear-gradient(-45deg, #2C3E50, #fff, #2C3E50, #fff);
 	background-size: 400% 400%;
 	animation: gradientShift 10s ease infinite;
 	display: flex;
@@ -21,7 +21,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background-color: #2C3E50;
+			background-color: 	rgba(255, 255, 255, 0.9);
 			border-top-right-radius: 1rem;
 			border-bottom-right-radius: 1rem;
 		}
@@ -51,7 +51,7 @@
 @media (min-width: 992px) {
 	.login {
 		&-container {
-			background: linear-gradient(135deg, rgba(39, 174, 96, 0.9), rgba(228, 231, 235, 0.9));
+			background: linear-gradient(135deg, rgba(39, 174, 96, 0.9), rgba(255, 255, 255, 0.9));
 			width: 65%;
 			height: 80%;
 			border-radius: 1rem;

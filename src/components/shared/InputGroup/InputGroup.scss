@@ -1,0 +1,99 @@
+.input {
+    &-group {
+        margin-bottom: 1.0625rem;
+        width: 100%;
+        position: relative;
+ 
+        &__label {
+            color: #2C3E50;
+ 
+            font-size: 0.875rem;
+            font-weight: 600;
+            line-height: 21px;
+ 
+            &.required {
+                color: #fa0303;
+            }
+        }
+ 
+        &__icon {
+            position: relative;
+        }
+ 
+        &__input {
+            background: #fff;
+            border: 1px solid #2C3E50;
+            color: #2C3E50;
+ 
+            &.white {
+                background-color: white;
+            }
+ 
+            width: 100%;
+ 
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:active {
+                font-family: 'Open-Sans';
+                font-size: 0.875rem;
+ 
+                &.required {
+                    -webkit-text-fill-color: #fa0303;
+                }
+            }
+ 
+            &:-moz-autofill,
+            &:-moz-autofill:hover,
+            &:-moz-autofill:focus {
+                font-family: 'Open-Sans';
+                font-size: 0.875rem;
+ 
+                &.required {
+                    -webkit-text-fill-color: #fa0303;
+                }
+            }
+ 
+            &.required {
+                color: #fa0303;
+                border: 1px solid #fa0303;
+            }
+ 
+            &--icon {
+                cursor: pointer;
+                position: absolute;
+                top: 7px;
+                right: 10px;
+            }
+ 
+            &[disabled] {
+                border-color: #5e5d5d;
+                pointer-events: none;
+                opacity: 0.7;
+            }
+        }
+ 
+        &__info-message {
+            display: block;
+            width: 100%;
+            text-align: right;
+            font-size: 0.75rem;
+            color: #ff4c41;
+            margin-top: 0.25rem;
+            position: absolute;
+        }
+    }
+}
+ 
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+ 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 

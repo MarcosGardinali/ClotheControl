@@ -38,7 +38,7 @@
   
   .label {
     align-self: flex-start;
-    color: var(--clr);
+    color: #203348;
     font-weight: 600;
   }
   
@@ -49,26 +49,29 @@
     align-items: center;
     gap: 0.5rem;
     border-radius: 3rem;
-    background-color: var(--bg-dark);
-    color: var(--bg-light);
+    background-color: #27AE60;
+    color: #2C3E50;
     border: none;
     cursor: pointer;
     transition: all 300ms;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 0.9rem;
   }
   
   .form .submit:hover {
-    background-color: var(--clr);
-    color: var(--bg-dark);
+    padding: 0.9rem 0.75rem;
+    background-color: #2C3E50 ;
+    border: 1px solid #27AE60;
+    color: #27AE60;
+    font-size: 1rem;
   }
   
   .span {
     text-decoration: none;
-    color: var(--bg-dark);
+    color: #203348;
   }
   
   .span a {
-    color: var(--clr);
+    color: #203348;
   }
   
